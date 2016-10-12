@@ -15,11 +15,25 @@
         display: block;
         margin: 0 auto;
       }
+
+      img.elk-pic:hover {
+        border: 5px solid violet;
+      }
     </style>
+
+    <script>
+      function sayHey() {
+        if (window.confirm("DO YOU LIKE ELK TOO??!?!?!?!?!")) {
+          window.alert("TOO BAD IT'S A DOG NOW.")
+          document.getElementById("elk-pic").src = "dog.png";
+        };
+      }
+    </script>
   </head>
+
   <body>
     <h1>This is Tom's amazing website!</h1>
-    <img class='elk-pic' src='elk.jpg'>
+    <img id='elk-pic' class='elk-pic' src='elk.jpg' onclick="sayHey()">
     <p>I love all sorts of cool stuff like elk and volleyball!</p>
   </body>
 </html>
